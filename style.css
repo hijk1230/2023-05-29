@@ -1,53 +1,98 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0; 
+  padding: 0; 
 }
 
 .Bana {
   display: flex;
-  align-items: center; /* アイテムを垂直方向に中央揃えにする */
+  align-items: center;
 }
 
+header {
+  margin: 0;  
+  padding: 0; 
+}
 
 nav {
-  background-color: #333; /* navの背景色を柔らかい黒に指定 */
+  background-color: #000;  
+  margin: 0; 
+  padding: 0; 
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
 }
 
 .menu {
   display: flex;
   justify-content: center;
   list-style: none;
+  padding: 0;
+  gap: 30px;  
 }
 
-
+.menu li {
+  margin: 0; 
+}
 
 .menu a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
-  padding: 10px 15px;
-  display: block; 
+  font-size: 24px;  
+  line-height: 1.5;  
+  padding: 15px 30px;  
+  display: block;
 }
+
 
 .menu a:hover {
   background-color: #fff;
   color: #000;
 }
 
+
+.main {
+  margin: 0;  
+  padding: 0; 
+}
+
 .top {
-  margin-top: 36px;
   font-size: 36px;
   text-align: center;
-  height: 300px;
+  height: 350px;
   line-height: 350px;
   background: url(image/byoudouin.jpg) center/cover black;
 }
 
 .infomation {
   display: flex;
+  justify-content: center; 
   gap: 32px;
   flex-wrap: wrap;
+  
+
 }
 
 .infomation h2 p {
   text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.company-info {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
