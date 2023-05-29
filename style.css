@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.Bana {
+  display: flex;
+  align-items: center; /* アイテムを垂直方向に中央揃えにする */
+}
+
+
+nav {
+  background-color: #333; /* navの背景色を柔らかい黒に指定 */
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block; 
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.top {
+  margin-top: 36px;
+  font-size: 36px;
+  text-align: center;
+  height: 300px;
+  line-height: 350px;
+  background: url(image/byoudouin.jpg) center/cover black;
+}
+
+.infomation {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.infomation h2 p {
+  text-align: center;
+}
