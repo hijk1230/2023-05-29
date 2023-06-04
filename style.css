@@ -1,12 +1,13 @@
-
-h1,h2,h3{
-  font-weight:normal;
+h1,
+h2,
+h3 {
+  font-weight: normal;
 }
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 .Bana {
@@ -15,23 +16,23 @@ body {
 }
 
 header {
-  margin: 0;  
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
-h1{
-  margin:0;
-  padding:0;
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-  background-color: #000;  
-  margin: 0; 
-  padding: 0; 
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
-  padding: 15px 30px;  
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
 }
 
 ul {
@@ -46,19 +47,19 @@ ul {
   justify-content: center;
   list-style: none;
   padding: 0;
-  gap: 30px;  
+  gap: 30px;
 }
 
 .menu li {
-  margin: 0; 
+  margin: 0;
 }
 
 .menu a {
   color: #fff;
   text-decoration: none;
-  font-size: 24px;  
-  line-height: 1.5;  
-  padding: 15px 30px;  
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 15px 30px;
 
 }
 
@@ -70,8 +71,8 @@ ul {
 
 
 .main {
-  margin: 0;  
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -98,13 +99,13 @@ ul {
 }
 
 
-.top h2{
+.top h2 {
   margin: 0;
   padding: 3px 8px;
   display: inline-block;
   line-height: 1;
   writing-mode: vertical-rl;
-  color:white;
+  color: white;
   position: relative;
   z-index: 2;
 }
@@ -123,14 +124,14 @@ ul {
 
 .infomation {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 32px;
   flex-wrap: wrap;
 }
 
-h3{
-  margin:0;
-  padding:0;
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .infomation h2 p {
@@ -138,9 +139,9 @@ h3{
 }
 
 
-p{
-  margin:0;
-  padding:0;
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .text {
@@ -148,20 +149,20 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 10vh; 
+  height: 10vh;
 }
 
 
 
 /* profile */
-.flex{
+.flex {
   display: flex;
   justify-content: space-between;
   margin-top: 64px;
   padding: 64px;
 }
 
-.flex h3{
+.flex h3 {
   font-size: 32px;
   border-bottom: 1px solid black;
   margin-bottom: 32px;
@@ -170,55 +171,81 @@ p{
 
 .flex p {
   display: block;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
 
 /* footer */
 footer {
-  display: flex;
+
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: #000;
   color: #fff;
-  padding: 20px;
-  margin-top: 16px;
+  padding: 32px;
+  padding-top: 48px;
+  height: 240px;
 }
+
+
 
 .footer-menu {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
-  gap: 30px;
   flex-wrap: wrap;
 }
+
+
 
 .footer-menu a {
   color: #fff;
   text-decoration: none;
-  margin-right: 10px;
-}
-
-.footer-menu ul li {
+  margin-right: 50px;
   border-right: 1px solid #fff;
-  padding-right: 8px;
+  padding: 8px 10px;
   white-space: nowrap;
 }
 
-.footer-menu ul li:last-child {
+.footer-menu ul li:not(:last-child) a {
   border-right: none;
+}
+
+.footer-menu ul li:last-child a {
+  padding-right: 0;
 }
 
 .sns {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 32px
 }
+
 .footer-menu a:hover {
   text-decoration: underline;
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.home a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  text-decoration: none;
+  color: #fff;
+  padding: 18px 18px;
+  margin-top: 30px;
+  border: solid white
+}
