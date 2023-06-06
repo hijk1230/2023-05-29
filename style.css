@@ -80,7 +80,7 @@ ul {
   font-size: 36px;
   text-align: center;
   height: 350px;
-  line-height: 350px;
+  line-height: 450px;
   background: url(image/byoudouin.jpg) center/cover black;
   background-color: rgba(255, 255, 255, 0.5);
   position: relative;
@@ -101,7 +101,7 @@ ul {
 
 .top h2 {
   margin: 0;
-  padding: 3px 8px;
+  padding: 10px 10px;
   display: inline-block;
   line-height: 1;
   writing-mode: vertical-rl;
@@ -157,7 +157,9 @@ p {
 /* profile */
 .flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* 中央寄せに変更 */
+  align-items: center; /* 中央寄せに変更 */
+  flex-wrap: wrap; /* 複数行に折り返すために追加 */
   margin-top: 64px;
   padding: 64px;
 }
@@ -176,6 +178,12 @@ p {
   margin-bottom: 20px;
 }
 
+.flex .profile,
+.flex .map {
+  flex-basis: calc(50% - 20px); 
+  margin-bottom: 40px;
+}
+
 
 /* footer */
 footer {
@@ -191,7 +199,6 @@ footer {
 }
 
 
-
 .footer-menu {
   display: flex;
   justify-content: center;
@@ -200,36 +207,66 @@ footer {
   flex-wrap: wrap;
 }
 
+.footer-menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
 
+.footer-menu li {
+  margin: 0;
+}
 
 .footer-menu a {
   color: #fff;
   text-decoration: none;
-  margin-right: 50px;
-  border-right: 1px solid #fff;
   padding: 8px 10px;
   white-space: nowrap;
 }
-
+.footer-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 0px;
+  border-right: 1px solid #fff;
+  padding: 8px 20px;
+  white-space: nowrap;
+}
 .footer-menu ul li:not(:last-child) a {
+  border-right: 1px solid #fff;
+}
+.footer-menu ul li:last-child a {
+  padding-right: 0;
   border-right: none;
 }
 
-.footer-menu ul li:last-child a {
-  padding-right: 0;
-}
 
+
+
+.sns ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
 .sns {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   margin-top: 32px
 }
-
+.sns a{
+  display: flex;
+}
 .footer-menu a:hover {
   text-decoration: underline;
 }
-
+small {
+  font-size: 14px;
+  padding-top:34px;
+  margin-top: 34px;
+}
 .home {
   display: flex;
   justify-content: center;
@@ -240,12 +277,15 @@ footer {
 .home a {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 18px;
   height: 18px;
   text-decoration: none;
   color: #fff;
   padding: 18px 18px;
   margin-top: 30px;
-  border: solid white
+  border: solid white;
+  margin-left: auto;
+
+  
+  
 }
