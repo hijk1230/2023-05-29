@@ -25,8 +25,11 @@ h1 {
   padding: 0;
 }
 
+.nav{
+  background:#000;
+}
+
 nav {
-  background-color: #000;
   margin: 0;
   padding: 0;
   display: flex;
@@ -157,9 +160,8 @@ p {
 /* profile */
 .flex {
   display: flex;
-  justify-content: center; /* 中央寄せに変更 */
-  align-items: center; /* 中央寄せに変更 */
-  flex-wrap: wrap; /* 複数行に折り返すために追加 */
+  justify-content: center; 
+  flex-wrap: wrap; 
   margin-top: 64px;
   padding: 64px;
 }
@@ -285,7 +287,52 @@ small {
   margin-top: 30px;
   border: solid white;
   margin-left: auto;
-
-  
-  
 }
+
+.product{
+  display: block;
+
+}
+.center{
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 200;
+  margin-top: 64px;
+}
+
+
+.bun{
+    width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flex{
+  display: flex;
+
+  padding:64px;
+
+padding-top:0;
+}
+
+.product div {
+  flex: 1;
+}
+
+.product img {
+  width: 50%;
+  height: auto;
+}
+
+
+.menu2 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+align-items: flex-start
+}
+/* kasou page */

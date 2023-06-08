@@ -1,0 +1,166 @@
+
+
+.Bana {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 15px 30px;
+
+}
+
+
+.menu a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+footer {
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 32px;
+  padding-top: 48px;
+  height: 240px;
+}
+
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.footer-menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
+
+.footer-menu li {
+  margin: 0;
+}
+
+.footer-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+.footer-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 0px;
+  border-right: 1px solid #fff;
+  padding: 8px 20px;
+  white-space: nowrap;
+}
+.footer-menu ul li:not(:last-child) a {
+  border-right: 1px solid #fff;
+}
+.footer-menu ul li:last-child a {
+  padding-right: 0;
+  border-right: none;
+}
+
+
+
+
+.sns ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
+.sns {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px
+}
+.sns a{
+  display: flex;
+}
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+small {
+  font-size: 14px;
+  padding-top:34px;
+  margin-top: 34px;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.home a {
+  display: flex;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  text-decoration: none;
+  color: #fff;
+  padding: 18px 18px;
+  margin-top: 30px;
+  border: solid white;
+  margin-left: auto;
+
+  
+
+}
