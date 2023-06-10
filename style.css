@@ -357,3 +357,126 @@ small {
 }
 
 /* kasou page */
+
+/* メディアクエリ */
+/* Desktop Devices *//* 省略...（前半部分に変更はありません） */
+
+/* Media Query for Mobile devices */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nav, .footer-menu {
+    flex-direction: column;
+  }
+
+  .menu, .footer-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a, .footer-menu a {
+    font-size: 18px;
+  }
+
+  .top {
+    height: 200px;
+    line-height: 200px;
+  }
+
+  .top h2 {
+    font-size: 24px;
+    padding: 5px;
+  }
+
+  .flex .profile,
+  .flex .map,
+  .product div {
+    flex-basis: 100%;
+  }
+
+  .product img {
+    width: 100%;
+  }
+}
+
+/* Media Query for Tablet devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .nav, .footer-menu {
+    flex-direction: column;
+  }
+
+  .menu, .footer-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a, .footer-menu a {
+    font-size: 20px;
+  }
+
+  .top {
+    height: 250px;
+    line-height: 250px;
+  }
+
+  .top h2 {
+    font-size: 28px;
+    padding: 5px;
+  }
+
+  .flex .profile,
+  .flex .map,
+  .product div {
+    flex-basis: 100%;
+  }
+
+  .product img {
+    width: 100%;
+  }
+}
+
+/* Media Query for Desktop devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .top {
+    height: 300px;
+    line-height: 300px;
+  }
+
+  .top h2 {
+    font-size: 32px;
+  }
+
+  .flex .profile,
+  .flex .map {
+    flex-basis: 50%;
+  }
+
+  .product img {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .top {
+    height: 350px;
+    line-height: 350px;
+  }
+
+  .top h2 {
+    font-size: 36px;
+  }
+
+  .flex .profile,
+  .flex .map {
+    flex-basis: 50%;
+  }
+
+  .product img {
+    width: 50%;
+ 
